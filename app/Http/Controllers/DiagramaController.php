@@ -192,9 +192,10 @@ class DiagramaController extends Controller
             }
         }
 
-        $path = $diagrama->nombre . 'postgresql.txt';
+        $path = 'postgresql.txt';
+        // dd(json_decode(json_encode($path)));
         file_put_contents($path, $script);
-        return response()->download($path)->deleteFileAfterSend(true);
+        return response()->download($path);
     }
 
     public function generarScriptForSQLServer($id) {
@@ -242,9 +243,9 @@ class DiagramaController extends Controller
             }
         }
     
-        $path = $diagrama->nombre . 'sqlserver.txt';
+        $path = 'sqlserver.txt';
         file_put_contents($path, $script);
-        return response()->download($path)->deleteFileAfterSend(true);
+        return response()->download($path);
     }
 
     public function generarScriptForSQLite($id) {
@@ -296,9 +297,9 @@ class DiagramaController extends Controller
             }
         }
     
-        $path = $diagrama->nombre . 'sqlite.txt';
+        $path = 'sqlite.txt';
         file_put_contents($path, $script);
-        return response()->download($path)->deleteFileAfterSend(true);
+        return response()->download($path);
     }
 
     public function generate($id) {
@@ -416,6 +417,6 @@ class DiagramaController extends Controller
             unlink($indexPath);
         }
     
-        return response()->download(public_path($filename))->deleteFileAfterSend(true);
+        return response()->download(public_path($filename));
     }
 }

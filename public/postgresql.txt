@@ -1,0 +1,12 @@
+CREATE TABLE Categoria (
+  id SERIAL PRIMARY KEY,
+  nombre VARCHAR(50),
+  descripcion VARCHAR(50)
+);
+CREATE TABLE Egreso (
+  id SERIAL PRIMARY KEY,
+  Monto DOUBLE PRECISION,
+  Fecha DOUBLE PRECISION
+);
+ALTER TABLE Egreso ADD COLUMN Categoria_id INT;
+ALTER TABLE Egreso ADD CONSTRAINT fk_Categoria_Egreso FOREIGN KEY (Categoria_id) REFERENCES Categoria(id);
