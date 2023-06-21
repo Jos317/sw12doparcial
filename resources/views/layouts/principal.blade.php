@@ -175,6 +175,7 @@
 
         <script src="{{asset('asset/js/vendor.min.js')}}"></script>
         <script src="{{asset('asset/js/app.min.js')}}"></script>
+        <script src="{{asset('asset/plugins/ionicons/dist/ionicons/ionicons.js')}}"></script>
 
         {{-- <script src="{{ mix('js/app.js') }}"></script>
         <script src="{{asset('/js/app.js')}}"></script> --}}

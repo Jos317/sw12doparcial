@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [AuthController::class, 'showWeb']);
 
 Route::get('login', [AuthController::class, 'showLogin'])->name('login');
+Route::get('register', [AuthController::class, 'showRegister'])->name('register');
 Route::post('login', [AuthController::class, 'login']);
 
 // Route::group(['prefix' => 'admin'], function () {

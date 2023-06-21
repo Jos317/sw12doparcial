@@ -26,7 +26,6 @@ class CreateColaboraTable extends Migration
             ->constrained('users')
             ->cascadeOnUpdate()
             ->nullOnDelete();
-            // $table->timestamps();
         });
     }
 

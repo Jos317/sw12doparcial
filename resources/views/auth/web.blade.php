@@ -70,7 +70,7 @@
                     Es multiusuario y gratuito
                 </p>
                 <a href="{{url('login')}}" class="btn btn-theme btn-primary">Iniciar Sesión</a> 
-                <a href="#" class="btn btn-theme btn-outline-white">Registrarse</a>
+                <a href="{{url('register')}}"  class="btn btn-theme btn-outline-white">Registrarse</a>
                 <br />
                 <br />
             </div>
