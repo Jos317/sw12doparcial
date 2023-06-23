@@ -191,7 +191,7 @@ file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
         labels: [],
         attrs: {
             line: {
-                stroke: '#8f8f8f',
+                stroke: '#222138',
                 strokeDasharray: '0',
                 strokeWidth: 2,
                 fill: 'none',
@@ -202,7 +202,7 @@ file, You can obtain one at http://jointjs.com/license/rappid_v2.txt
                 },
                 targetMarker: {
                     type: 'path',
-                    d: 'M 0 -5 -10 0 0 5 z',
+                    d: 'M 0 -5 -10 0 0 5 10 0 z',
                     stroke: 'none'
                 }
             }
